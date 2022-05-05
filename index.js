@@ -34,6 +34,12 @@ async function run() {
       const inventory = await collection.findOne(query);
       res.send(inventory);
     });
+
+    app.post("/inventory", async (req, res) => {
+      const newProduct = req.body;
+      const result = await collection.insertOne(newProduct);
+      res.send(result);
+    });
   } finally {
     //  await client.close();
   }
