@@ -1,7 +1,7 @@
 [
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "HERO SMART 1X324DF ",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLEtipsa.",
@@ -9,7 +9,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "PHOENIX BLUE 3XDFE3",
     "price": "100",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLEtipsa.",
@@ -17,7 +17,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "HERO LITTLE RED",
     "price": "150",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLEtipsa.",
@@ -25,7 +25,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "ORBEA SPORTS BIKE",
     "price": "180",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLEtipsa.",
@@ -33,7 +33,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "BIANCHI BLACK RACE BIKE",
     "price": "100",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLEtipsa.",
@@ -41,7 +41,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "CARVELO WHITE TTMXTF ",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLEtipsa",
@@ -49,7 +49,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "RELIGH RED SPORTS BIKE",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLEtipsa",
@@ -57,7 +57,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "CONNONDALE NEW CASUAL BIKE ",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLE",
@@ -65,7 +65,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "HERO HANDY HOT",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLE",
@@ -73,7 +73,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "ORBEA STYLISH BIKE",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLE",
@@ -81,7 +81,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "RAODITE STYLISH STANDARD",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLE",
@@ -89,7 +89,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "HERO CASUAL GEAR BIKE",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLE",
@@ -97,7 +97,7 @@
   },
   {
     "quantity": "",
-    "supplier-name": "zero biker bd",
+    "supplier": "zero biker bd",
     "name": "FIREFOX COOL EXDFDD3X",
     "price": "300",
     "description": "Mountain bike children's car 21 speed double disc brake shock absorber arena car performance BICYCLE",
