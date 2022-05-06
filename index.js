@@ -40,6 +40,26 @@ async function run() {
       const result = await collection.insertOne(newProduct);
       res.send(result);
     });
+
+    app.delete("/inventory/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await collection.deleteOne(query);
+      res.send(result);
+    });
+    app.put("/update/:id", async (req, res) => {
+      const id = req.params.id;
+      const object = req.body;
+      const filter = { _id: ObjectId(id) };
+      const options = { upsert: true };
+      const updateDoc = {
+        $set: {
+          quantity: object.decrease,
+        },
+      };
+      const result = await collection.updateOne(filter, updateDoc, options);
+      res.send(result);
+    });
   } finally {
     //  await client.close();
   }
