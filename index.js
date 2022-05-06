@@ -63,13 +63,19 @@ async function run() {
       res.send(result);
     });
 
+    app.get("/useritem", async (req, res) => {
+      const email = req.query.email
+      const query = {email};
+      const cursor = userCollection.find(query);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
 
     app.post("/useritem", async (req, res) => {
       const userItem = req.body;
       const result = await userCollection.insertOne(userItem);
       res.send(result);
     });
-
   } finally {
     //  await client.close();
   }
