@@ -21,6 +21,8 @@ async function run() {
   try {
     await client.connect();
     const collection = client.db("bike-warehouse").collection("inventories");
+    const userCollection = client.db("bike-warehouse").collection("useritem");
+
     app.get("/inventory", async (req, res) => {
       const query = {};
       const cursor = collection.find(query);
@@ -60,6 +62,14 @@ async function run() {
       const result = await collection.updateOne(filter, updateDoc, options);
       res.send(result);
     });
+
+
+    app.post("/useritem", async (req, res) => {
+      const userItem = req.body;
+      const result = await userCollection.insertOne(userItem);
+      res.send(result);
+    });
+
   } finally {
     //  await client.close();
   }
