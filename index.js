@@ -136,6 +136,10 @@ app.get("/", (req, res) => {
   res.send("running warehouse server ");
 });
 
+app.get('/check', (req,res)=>{
+  res.send('check before going to client side')
+})
+
 app.listen(port, () => {
   console.log("listening to port", port);
 });
