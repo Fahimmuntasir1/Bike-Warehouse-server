@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const jwt = require("jsonwebtoken");
 const port = process.env.PORT || 5000;
 require("dotenv").config();
 
@@ -23,6 +24,16 @@ async function run() {
     const collection = client.db("bike-warehouse").collection("inventories");
     const userCollection = client.db("bike-warehouse").collection("useritem");
 
+    //jwt auth
+    app.post("/getToken", async (req, res) => {
+      const user = req.body;
+      const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
+        expiresIn: "1d",
+      });
+      res.send(accessToken);
+    });
+
+    //inventory api
     app.get("/inventory", async (req, res) => {
       const query = {};
       const cursor = collection.find(query);
@@ -64,8 +75,8 @@ async function run() {
     });
 
     app.get("/useritem", async (req, res) => {
-      const email = req.query.email
-      const query = {email};
+      const email = req.query.email;
+      const query = { email };
       const cursor = userCollection.find(query);
       const result = await cursor.toArray();
       res.send(result);
@@ -83,7 +94,6 @@ async function run() {
       const result = await userCollection.deleteOne(query);
       res.send(result);
     });
-
   } finally {
     //  await client.close();
   }
